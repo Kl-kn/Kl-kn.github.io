@@ -30,11 +30,6 @@ function checkRiddle() {
     }
 }
 
-document.getElementById('heart').addEventListener('click', function() {
-    document.getElementById('result3').textContent = "¡Encontraste el corazón!";
-    this.style.display = 'none';
-});
-
 function checkCode() {
     const code = document.getElementById('code').value;
     const result = document.getElementById('result4');
