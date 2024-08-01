@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorpresa Especial para Ti Preciosa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="welcome" class="container">
+        <h1>¡Hola, mi amor la mas Hermosa del mundo!</h1>
+        <h1>He preparado una sorpresa especialmente para ti. ¡Comencemos esta aventura juntos!</h1>
+        <button onclick="startGames()">Comenzar</button>
+    </div>
+
+    <div id="games" class="container" style="display: none;">
+        <div id="game1" class="game">
+            <h2>Juego 1: Adivina la Palabra</h2>
+            <p>¿Cuál es mi pasatiempo favorito?</p>
+            <input type="text" id="guess" placeholder="Escribe tu respuesta">
+            <button onclick="checkGuess()">Adivinar</button>
+            <p id="result1"></p>
+        </div>
+        <div id="game2" class="game">
+            <h2>Juego 2: Resuelve el Acertijo</h2>
+            <p>Resuelve este acertijo: ¿Qué es algo que siempre se mueve pero nunca sale de su lugar?</p>
+            <input type="text" id="riddleAnswer" placeholder="Escribe tu respuesta">
+            <button onclick="checkRiddle()">Responder</button>
+            <p id="result2"></p>
+        </div>
+        <div id="game3" class="game">
+            <h2>Juego 3: Encuentra el Corazón</h2>
+            <p>Haz clic en el corazón escondido para continuar.</p>
+            <div id="heart" class="hidden-heart"></div>
+            <p id="result3"></p>
+        </div>
+        <div id="game4" class="game">
+            <h2>Juego 4: Rompe el Código</h2>
+            <p>Introduce el código secreto para avanzar.</p>
+            <input type="text" id="code" placeholder="Introduce el código">
+            <button onclick="checkCode()">Enviar</button>
+            <p id="result4"></p>
+        </div>
+    </div>
+
+    <div id="finalMessage" class="container" style="display: none;">
+        <h2>Felicidades, amor mío!</h2>
+        <p>Te amo más de lo que las palabras pueden expresar. Eres el amor de mi vida y hoy quiero felicitarte por tu día especial.</p>
+        <p>Siempre tuyo, [Tu Nombre]</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
